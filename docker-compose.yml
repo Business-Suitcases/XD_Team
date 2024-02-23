@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  db:
+    image: postgres:15
+    command: -p 1221
+    expose:
+      - 1221
+    env_file:
+      - .env
